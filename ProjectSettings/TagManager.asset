@@ -11,6 +11,7 @@ TagManager:
   - Coin
   - VendingMachine
   - OneWayPlatform
+  - Key
   layers:
   - Default
   - TransparentFX
