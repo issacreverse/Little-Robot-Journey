@@ -1,7 +1,9 @@
- using UnityEngine;
+using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
+public class RobotClimb : MonoBehaviour
 {
+
+    public bool canClimb = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,9 +13,6 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I))
-        {
-            UIManager.instance.ToggleInventory();
-        }
+        
     }
 }

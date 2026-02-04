@@ -8,6 +8,11 @@ public class PickableItem : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            if(itemData.partItemData != null)
+            {
+                other.gameObject.GetComponent<RobotEquipment>()?.Equip(itemData.partItemData);
+            }
+            
             PlayerInventory playerInventory = other.gameObject.GetComponent<PlayerInventory>();
             if(playerInventory != null)
             {

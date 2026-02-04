@@ -2,16 +2,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float jumpPower;
+    [SerializeField] private float climbSpeed;
 
-    Rigidbody2D rb;
-    [SerializeField] float moveSpeed = 0.1f;
-    [SerializeField] float climbSpeed = 0.4f;
-    [SerializeField] float jumpPower = 5f;
+    public bool canFly = false;
 
     [SerializeField] bool isGrounded = true;
     [SerializeField] bool isClimbing = false;
 
     [SerializeField] bool touchOneWayPlatform = false;
+
+    private Robot robot;
+    private Rigidbody2D rb;
 
     bool jump = false;
 
@@ -32,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        robot = GetComponent<Robot>();  
         rb = GetComponent<Rigidbody2D>();
 
         groundCheckRadius = 0.1f;
@@ -47,6 +51,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        moveSpeed = robot.stats.Get(StatType.MoveSpeed);
+        jumpPower = robot.stats.Get(StatType.JumpPower);
+        climbSpeed = robot.stats.Get(StatType.ClimbSpeed);
+
+
         groundCheck = transform.position - new Vector3(0, transform.localScale.y / 2, 0);
         ////하드코딩!!!
         ladderCheck = transform.position - new Vector3(0, 0.4f, 0); 

@@ -12,7 +12,8 @@ public class ItemData : ScriptableObject
 {
     public string id;
     public string displayName;
-    public ItemCategory category;   
+    public ItemCategory category;
+    public PartItemSO partItemData;   
 
     public Sprite Icon;
     [TextArea] public string description;
