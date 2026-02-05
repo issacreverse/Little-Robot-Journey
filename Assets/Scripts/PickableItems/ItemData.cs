@@ -7,7 +7,7 @@ public enum ItemCategory
     Key,
     Life
 }
-[CreateAssetMenu(menuName = "Game/Item Date", fileName = "NewItemData")]
+[CreateAssetMenu(menuName = "Game/Item Data", fileName = "NewItemData")]
 public class ItemData : ScriptableObject
 {
     public string id;

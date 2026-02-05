@@ -24,7 +24,7 @@ public class PlayerInventory : MonoBehaviour
 
     // public InventoryItem[] GetSlots() => slots;
 
-    void Start()
+    void Awake()
     {
         slots = new InventoryItem[capacity];
     }

@@ -1,7 +1,10 @@
- using UnityEngine;
+using UnityEngine;
+using System;
 
 public class PlayerInput : MonoBehaviour
 {
+    public event Action TryVending;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +21,10 @@ public class PlayerInput : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
+        }
+        if(Input.GetKeyDown(KeyCode.V))
+        {
+            TryVending?.Invoke();
         }
     }
 }

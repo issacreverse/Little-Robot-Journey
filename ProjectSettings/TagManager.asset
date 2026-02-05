@@ -28,8 +28,8 @@ TagManager:
   - Enemy
   - CameraBound
   - OneWayPlatform
-  - 
-  - 
+  - Item
+  - VendingMachine
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: HidingObject
+    uniqueID: 2412760733
     locked: 0
   m_RenderingLayers:
   - Default

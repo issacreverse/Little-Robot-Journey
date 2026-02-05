@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a8577ab801b3d418c14602df1513e7, type: 3}
-  m_Name: Legs1
-  m_EditorClassIdentifier: Assembly-CSharp::LegsItemSO
-  partName: BouncyLegs
-  partType: 2
-  statModifiers:
-  - statType: 1
-    modType: 0
-    value: 2
-  abilities: []
+  m_Script: {fileID: 11500000, guid: 1f13e97bdf057e94491b15b8c72213fe, type: 3}
+  m_Name: ArmMachine
+  m_EditorClassIdentifier: Assembly-CSharp::VendingMachineSO
+  price: 5
+  item: {fileID: 7077673989300074131, guid: fa4edc2d71d545d449c7c1bee003e221, type: 3}

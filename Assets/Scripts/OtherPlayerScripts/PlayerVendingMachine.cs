@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerVendingMachine : MonoBehaviour
 {
+    /*
     [SerializeField] bool touchVendingMachine = false;
     GameObject currentVendingMachine;
 
@@ -45,4 +46,5 @@ public class PlayerVendingMachine : MonoBehaviour
             currentVendingMachine = null;
         }
     }
+    */
 }

@@ -78,7 +78,8 @@ public class PlayerController : MonoBehaviour
         touchOneWayPlatform = Physics2D.OverlapCircle(groundCheck, groundCheckRadius, oneWayPlatformMask) != null;
 
         ////하드코딩!!!
-        isClimbing = Physics2D.OverlapBox(ladderCheck, new Vector2(0.5f, 0.1f), 0f, vineMask ) != null;   
+        isClimbing = Physics2D.OverlapBox(ladderCheck, new Vector2(0.5f, 0.1f), 0f, vineMask ) != null;  
+        if(!robot.climb.canClimb) isClimbing = false;
         
         if(isClimbing)
         {

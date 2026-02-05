@@ -29,6 +29,7 @@ public class RobotEquipment : MonoBehaviour
         switch (item.partType)
         {
             case PartType.Legs: 
+                Debug.Log("Legs Changed!");
                 Swap(ref legs, item); 
                 RemoveAbilities(legs);
                 ApplyAbilities(item);

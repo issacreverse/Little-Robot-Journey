@@ -1,9 +1,7 @@
 using UnityEngine;
 
-public class VendingMachine : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public int price {get; private set;} = 5;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,10 +12,5 @@ public class VendingMachine : MonoBehaviour
     void Update()
     {
         
-    }
-    public void DispenseItem()
-    {
-        Debug.Log("Item Dispensed!");
-        //아이템 지급 로직 추가
     }
 }
